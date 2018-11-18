@@ -1,0 +1,28 @@
+Building AXLE
+
+Consider next packages to install on Linux:
+
+    sudo add-apt-repository ppa:bitcoin/bitcoin
+    sudo apt-get update
+    sudo apt-get install libtool gcc make autoconf autogen automake cmake g++ build-essential pkg-config
+    sudo apt-get install libboost-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libevent-dev
+    sudo apt-get install qt5-qmake qt5-default qtbase5-dev-tools qttools5-dev-tools
+
+Use the autogen script to prepare the build environment.
+
+    ./autogen.sh
+    ./configure     --disable-tests
+    make
+    sudo make install    # optional
+
+Always verify the signatures and checksums.
+
+See doc/build-*.md for instructions on building axled,
+the intended-for-services, no-graphical-interface, reference
+implementation of AXLE.
+
+
+
+Running AXLE
+
+    mkdir ./data && axle-qt -testnet -datadir=./data -gen

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=AXLE
+Comment=AXLE P2P Cryptocurrency
+Comment[fr]=AXLE, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=AXLE, eşten eşe kriptografik sanal para birimi
+Exec=axle-qt %u
+Terminal=false
+Type=Application
+Icon=axle128
+MimeType=x-scheme-handler/axle;
+Categories=Office;Finance;

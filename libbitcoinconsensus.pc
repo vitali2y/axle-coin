@@ -1,0 +1,11 @@
+prefix=/home/vit/prjs/axle/axle_crypto/axle_run
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: AXLE consensus library
+Description: Library for the Bitcoin consensus protocol.
+Version: 0.0.1
+Libs: -L${libdir} -lbitcoinconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto
